@@ -1,7 +1,7 @@
 var PouchDB = require('pouchdb');
 window.PouchDB = PouchDB;
 var localDB = new PouchDB('test_pouch');
-var remoteDB = new PouchDB('http://138.197.87.123:5984/test_pouch');
+var remoteDB = new PouchDB('http://192.168.1.107/test_pouch');
 
 var dbHelpers = {
   localDB: localDB,
