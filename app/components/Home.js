@@ -15,13 +15,13 @@ var Home = React.createClass({
       maxid: 0,
     }
   },
-  close() {
+  close: function () {
     this.setState({ showModal: false });
   },
-  open() {
+  open: function () {
     this.setState({ showModal: true });
   },
-  register() {
+  register: function () {
     id = this.state.maxid + 1;
     var doc = {
       _id: id.toString(),
